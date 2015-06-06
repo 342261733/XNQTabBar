@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XNQTabBarItem">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tabbar_me_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fzv-2a-rTS">
+                    <rect key="frame" x="28" y="8" width="25" height="23"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfF-YS-dyO">
+                    <rect key="frame" x="30" y="35" width="20" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.52549019607843139" green="0.54509803921568623" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tabbar_tips.png" translatesAutoresizingMaskIntoConstraints="NO" id="2G2-6c-RJv">
+                    <rect key="frame" x="51" y="6" width="8" height="8"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUb-Xv-osC">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="49"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yUb-Xv-osC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1H1-66-8vS"/>
+                <constraint firstItem="2G2-6c-RJv" firstAttribute="top" secondItem="Fzv-2a-rTS" secondAttribute="top" constant="-2" id="3BG-aa-9KJ"/>
+                <constraint firstItem="jfF-YS-dyO" firstAttribute="centerX" secondItem="yUb-Xv-osC" secondAttribute="centerX" id="4bn-sb-fCV"/>
+                <constraint firstItem="yUb-Xv-osC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AdH-DZ-iLa"/>
+                <constraint firstAttribute="trailing" secondItem="yUb-Xv-osC" secondAttribute="trailing" id="BoI-S9-fdW"/>
+                <constraint firstItem="Fzv-2a-rTS" firstAttribute="centerX" secondItem="yUb-Xv-osC" secondAttribute="centerX" id="VhC-U2-vki"/>
+                <constraint firstAttribute="bottom" secondItem="jfF-YS-dyO" secondAttribute="bottom" constant="2" id="XDx-qm-w39"/>
+                <constraint firstAttribute="bottom" secondItem="yUb-Xv-osC" secondAttribute="bottom" id="YhS-Hs-DCd"/>
+                <constraint firstItem="jfF-YS-dyO" firstAttribute="top" secondItem="Fzv-2a-rTS" secondAttribute="bottom" constant="5" id="wgE-BK-1w3"/>
+                <constraint firstItem="2G2-6c-RJv" firstAttribute="leading" secondItem="Fzv-2a-rTS" secondAttribute="trailing" constant="-2" id="yBh-me-sG2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgButton" destination="yUb-Xv-osC" id="5GM-tJ-z3i"/>
+                <outlet property="tabBarImage" destination="Fzv-2a-rTS" id="0Tu-uJ-8kM"/>
+                <outlet property="tabBarTipsImage" destination="2G2-6c-RJv" id="38J-GL-zwW"/>
+                <outlet property="tabBarTitle" destination="jfF-YS-dyO" id="Ibq-sC-w7M"/>
+            </connections>
+            <point key="canvasLocation" x="179" y="131.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tabbar_me_normal.png" width="25" height="23"/>
+        <image name="tabbar_tips.png" width="8" height="8"/>
+    </resources>
+</document>
